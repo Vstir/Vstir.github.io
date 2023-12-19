@@ -1,0 +1,81 @@
+// SCSS Document 
+$primarycolour: #000000;
+$navbar-background-color: #000000; // Black background color
+
+body {
+    background-color: $primarycolour;
+	max-width: 140px;
+}
+
+h1 {
+    color: #fff;
+}
+
+nav.navbar {
+    
+    margin: 0 120px; /* Distance from left and right edges of the screen */
+    background-color: $navbar-background-color; /* Set the background color to black */
+    border: none; /* Remove the border */
+
+    ul.navbar-nav {
+        li.nav-item {
+            a.nav-link {
+                color: #ffffff !important; /* Set link text color to white */
+
+                &:hover,
+                &.active {
+                    border-bottom: 2px solid white; /* Underline on hover and when active */
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-size: 40px;
+        font-family: cursive;
+        color: #ffffff; /* Set text color to white */
+
+        img {
+            max-height: 100px; /* Set the max height of the logo */
+            width: auto; /* Allow the width to adjust proportionally */
+            display: block; /* Make sure it's treated as a block element */
+        }
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+.header-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.header-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wideimage {
+    width: 100%;
+    height: auto;
+	position: absolute
+}
+
+.maindiv {
+    width: 100%;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.imgpageheader{
+	position: relative;
+	z-index: 100;
+	padding: 10px;
+	text-shadow: 1px 1px red;
+	
+}
